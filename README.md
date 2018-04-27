@@ -37,6 +37,19 @@ $ debuild -us -uc -b
 If you get lintian errors during `debuild`, try `debuild --no-lintian -us -uc -b`.
 
 
+## Release a package
+
+- Fork the repo at github
+- login at https://travis-ci.org/
+  - open your profile
+  - create api key
+  - activate the project at your travis-ci profile
+- modify .travis.yml <BR>
+  (update project name, mail address and api key)
+- create a release tag
+- push release tag
+- debian apckage will be uploaded in the releases view of your project
+
 ## Installing the Debian Package
 
 ```sh
